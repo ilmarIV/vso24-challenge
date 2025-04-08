@@ -9,7 +9,7 @@ const Header = () => {
                 <h1>React Food Order App</h1>
             </div>
             <nav>
-            <Button/>
+            <Button textOnly={true}>Cart ()</Button>
             </nav>
         </header>
     )

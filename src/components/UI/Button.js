@@ -1,8 +1,8 @@
 const Button = (props) => {
-    const className = props.button.textOnly ? "text-button" : "button";
+    const className = props.textOnly ? "text-button" : "button";
   
     return (
-        <button className={className} onClick={props.button.onClick}>
+        <button className={className} onClick={props.onClick}>
             {props.children}
         </button>
     );
