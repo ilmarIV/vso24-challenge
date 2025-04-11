@@ -3,7 +3,7 @@ import { useContext } from 'react'
 import CartContext from '../store/CartContext'
 
 const MealItem = (props) => {
-    const formattedPrice = new Intl.NumberFormat("et-EE", { style: "currency", currency: "EUR" }).format(props.meal.price,)
+    const formattedPrice = new Intl.NumberFormat("et-EE", { style: "currency", currency: "EUR" }).format(props.meal.price,);
     
     const cartContext = useContext(CartContext);
 
