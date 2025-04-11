@@ -9,7 +9,7 @@ const Meals = () => {
         fetch("http://localhost:3001/meals")
         .then(res => res.json())
         .then(data => {
-            console.log("Meals data:", data);
+            //console.log("Meals data:", data);
             setMeals(data);
         }).catch((err) => {
             console.error("Error fetching meals:", err);

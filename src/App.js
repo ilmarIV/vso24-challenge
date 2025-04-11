@@ -3,8 +3,8 @@ import Headers from "./components/Header";
 import Meals from "./components/Meals";
 import { CartContextProvider } from "./store/CartContext";
 
-// Reducer function
 const cartReducer = (state, action) => {
+  //console.log(state.items);
   switch (action.type) {
     case "ADD": {
       const { id, amount = 1 } = action.item;
