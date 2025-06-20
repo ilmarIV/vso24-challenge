@@ -5,9 +5,8 @@ import Modal from "./components/UI/Modal";
 import Button from "./components/UI/Button";
 import { CartContextProvider } from "./store/CartContext";
 import CartContext from "./store/CartContext";
-import { type } from "@testing-library/user-event/dist/type";
 
-const cartReducer = (state, action) => {
+export const cartReducer = (state, action) => {
   //console.log(state.items);
   switch (action.type) {
     case "ADD": {
